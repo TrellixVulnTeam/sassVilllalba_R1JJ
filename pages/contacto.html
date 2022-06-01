@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/logoPositivo.png" type="image/x-icon/">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="gridContainer">
+    <header id="navFondo">
+
+        <img src="../assets/img/logoPositivo.png" alt="logoViñeta" class="navFondo__logo">
+
+        <nav class="navFondo__botonera">
+
+            <ul class="navFondo__botonera--lista">
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../pages/nosotros.html">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="../pages/produccionMusical.html">Producción Musical</a>
+                </li>
+
+                <li>
+                    <a href="../pages/multimedia.html">Multimedia</a>
+                </li>
+                
+                <li>
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+                
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main id="formulario">
+
+        <div class="contacto">
+
+            <h3 class="contacto__titulo">Contactanos!</h3>
+
+            <form action="validar.php" method="get" enctype="multipart/form-data" class="contacto__formulario">
+
+                <div id="contacto__formulario--bloque">
+
+                    <form action="validar.php" method="get" enctype="multipart/form-data" class="contacto__formulario--form">
+        
+                        <div class="contacto__formulario--nombre">
+
+                            <label for="nombre" class="contacto__formulario--texto">Ingrese nombre y apellido</label>
+                            <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre y apellido">
+
+                        </div>
+
+                        <div class="contacto__formulario--mail">
+
+                            <label for="mail" class="contacto__formulario--texto">Ingrese su email</label>
+                            <input id="mail" name="mail" type="email" placeholder="ejemplo@gmail.com" required class="contacto__formulario--boton">
+
+                        </div>
+
+                        <fieldset class="contacto__formulario--dia">
+
+                            <legend>Dias y horarios</legend>
+
+                            <label for="dias" class="contacto__formulario--texto">Elija dia y horario</label>
+
+                            <select name="dias" id="dias">
+
+                                <option value="lunes" class="contacto__formulario--texto">Lunes 18:00hs a 21:00hs</option>
+                                <option value="miercoles" class="contacto__formulario--texto">Miércoles 18:00hs a 21:00hs</option>
+                                <option value="viernes" class="contacto__formulario--texto" >Viernes 18:00hs a 21:00hs</option>
+
+                            </select>
+
+                        </fieldset>
+
+                        <fieldset class="contacto__formulario--servicio">
+
+                            <legend class="contacto__formulario--titulo">Tipo de servicio</legend>
+
+                            <label for="grabacion">Grabación<input id="grabacion" name="servicio" value="grabacion" type="checkbox"></label>
+                            <label for="mezcla">Mezcla<input id="mezcla" name="servicio" value="mezcla" type="checkbox"></label>
+                            <label for="visual">Visual<input id="visual" name="servicio" value="visual" type="checkbox"></label>
+
+                        </fieldset>
+
+                        <fieldset class="contacto__formulario--comentario">
+
+                            <legend class="contacto__formulario--titulo">Indique un Comentario</legend>
+
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                            <br>
+                        
+                        <div id="validar">
+
+                            <input id="enviar" type="submit" value="enviar" >
+                            <input id="limpiar" type="reset" value="limpiar" >
+
+                        </div>
+
+                    </form>
+        
+                </div>
+            
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <a href="../index.html" class="footer__linkHome">Home</a>
+        <p class="footer__derechos">Positivo Studio todos los derechos reservados</p>
+    </footer>
+    </div>
+</body>
+
+</html>
