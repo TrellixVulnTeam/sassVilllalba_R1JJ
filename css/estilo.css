@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.gridContainer {
+  display: grid;
+  grid-template-areas: "header header header header" "navFondo__botonera navFondo__botonera navFondo__botonera navFondo__botonera " "banner banner banner banner" "banner banner banner banner" "produccionMusical produccionMusical produccionMusical produccionMusical" "footer footer footer footer";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.5fr 0,5fr 2fr 2fr 1fr 0,5fr;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: black; }
+
+#navFondo img {
+  grid-area: header;
+  height: 100px; }
+
+.navFondo__botonera ul {
+  grid-area: navFondo__botonera;
+  display: flex;
+  justify-content: space-around; }
+
+a {
+  text-decoration: none;
+  color: darkorange; }
+
+li {
+  padding: 10px;
+  list-style-type: none; }
+
+.banner {
+  grid-area: banner;
+  align-content: center;
+  height: 100%;
+  width: 100%; }
+
+.banner img {
+  height: 100%;
+  width: 100%; }
+
+.banner__titulo {
+  position: absolute;
+  background-color: black;
+  padding: 25px;
+  margin: 100px 100px 100px 100px;
+  align-self: center; }
+
+.produccionMusical {
+  grid-area: produccionMusical;
+  background-color: darkslategray;
+  color: aliceblue;
+  width: 100%; }
+
+.produccionMusical__texto {
+  padding: 5px;
+  border: 2em;
+  margin: 50px 100px 50px 100px;
+  text-align: center;
+  font-size: 200%; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: black;
+  padding-top: 20px; }
+
+.footer__derechos {
+  color: aliceblue;
+  padding: 10px;
+  margin: 50px 0px 50px 0px; }
+
+.produccionMusical {
+  align-content: center; }
+  .produccionMusical #boton__sass {
+    color: black;
+    background-color: aqua; }
+  .produccionMusical #texto__sass {
+    color: black; }
